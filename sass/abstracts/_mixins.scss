@@ -1,0 +1,31 @@
+// 0 - 599px:       Phone
+// 600 - 899px:     Tablet portrait
+// 900 - 1199px:    Tablet landscape
+// 1200px - 1799px: Desktop
+// 1800px + :       Big desktop
+
+@mixin tab-port {
+  @media (min-width : $tab-port) {
+    @content;
+  }
+}
+
+
+@mixin tab-land {
+  @media (min-width : $tab-land) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width : $desktop) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width : $large-desktop) {
+    @content;
+  }
+}
